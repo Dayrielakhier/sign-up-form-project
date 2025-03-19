@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'norse bold';
+    src: url(./norse-bold/Norse-Bold.woff2);
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.left-side {
+    width: 40%;
+    position: relative;
+}
+
+.right-side {
+    width: 60%;
+}
+
+.background-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 20%;
+    height: 15%;
+}
+
+.logo img {
+    height: 80%;
+    object-fit: contain;
+}
+
+.logo-text {
+    color: white;
+    font-family: 'norse bold';
+    font-size: 2rem;
+}
