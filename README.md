@@ -1,1 +1,1 @@
-# sign-up-form-project
+A project to create a simple sign-up form for an imaginary service.
