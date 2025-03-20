@@ -7,46 +7,76 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="background-img">
-        <img src="./halie-west-25xggax4bSA-unsplash.jpg" alt="green leaf plant">
-        <div>
-            <img src="./odin-lined.png" alt="Odin logo"> ODIN
+    <div class="left-side">
+        <div class="background-img">
+            <img src="./halie-west-25xggax4bSA-unsplash.jpg" alt="green leaf plant">
+        </div>
+        <div class="credit">
+            Photo by <a href="">Halie West</a> on <a href="">Unsplash</a>
+        </div>
+        <div class="logo">
+            <img src="./odin-lined.png" alt="Odin logo"> 
+            <div class="logo-text">ODIN</div>
         </div>
     </div>
-    <div class="container">
-        <div>
+    <div class="right-side">
+        <div class="desc">
             This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+        </div>
+        <div class="cta">
             Sign up <em>now</em> to get started.
         </div>
-        <div>
+        <div class="para">
             You <em>know</em> you want to.
         </div>
         <div>
-            <form action="" method="get">
-                <legend>Let's do this!</legend>
+            <form action="" method="post">
+                <div class="container">
+                    <legend>Let's do this!</legend>
 
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="first-name">
-                
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="last-name">
-                
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email">
-                
-                <label for="tel">PHONE NUMBER</label>
-                <input type="number" id="tel" name="phone">
-                
-                <label for="pwd">PASSWORD</label>
-                <input type="password" id="pwd" name="password">
-                
-                <label for="cfm-pwd">CONFIRM PASSWORD</label>
-                <input type="password" id="cfm-pwd" name="cfm-pwd">
+                    <fieldset>
+                        <div class="form-row">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
 
-                <button>Create Account</button>
+                        <div class="form-row">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </div> 
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="form-row">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="tel">PHONE NUMBER</label>
+                            <input type="tel" id="tel" name="phone">
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <div class="form-row">
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" id="pwd" name="password" minlength="8">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="cfm-pwd">CONFIRM PASSWORD</label>
+                            <input type="password" id="cfm-pwd" name="cfm-pwd" minlength="8">
+                        </div>
+                    </fieldset>
+                </div>
+                
+                <div class="btn">
+                    <button type="submit">Create Account</button>
+                </div>
             </form>
         </div>
-        <div>
+        <div class="login">
             Already have an account? <a href="">Log in</a>
         </div>
     </div>
