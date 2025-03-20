@@ -1,3 +1,7 @@
+:root {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'norse bold';
     src: url(./norse-bold/Norse-Bold.woff2);
@@ -5,17 +9,25 @@
 
 body {
     display: flex;
-    flex-direction: row;
     margin: 0;
 }
 
 .left-side {
     width: 40%;
     position: relative;
+    display: flex;
+    flex: auto;
+    justify-content: center;
 }
 
 .right-side {
     width: 60%;
+    background-color: #FAF9F6;
+    font-family: sans-serif;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .background-img img {
@@ -24,8 +36,22 @@ body {
     object-fit: cover;
 }
 
+.credit {
+    position: absolute;
+    bottom: 2%;
+    color: #FAF9F6;
+    font-size: 0.5rem;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+.credit a {
+    color: #FAF9F6;
+}
+
 .logo {
     display: flex;
+    flex: auto;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -45,4 +71,84 @@ body {
     color: white;
     font-family: 'norse bold';
     font-size: 2rem;
+}
+
+.right-side > div:not(:nth-child(4)),
+.container,
+.btn {
+    padding-left: 5%;
+}
+
+.desc,
+.cta,
+.para,
+legend {
+    font-weight: 700;
+}
+
+.para {
+    margin: 5% 0;
+}
+
+.container {
+    background-color: white;
+    padding: 2% 5%; 
+    box-shadow: 0px 5px 5px #c9c9c9;
+}
+
+legend {
+    margin-bottom: 2%;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+fieldset {
+    display: flex;
+    gap: 6%;
+    border: none;
+    padding: 0;
+}
+
+label {
+    font-size: smaller;
+    font-weight: 600;
+    color: #2b2b2b;
+    letter-spacing: 1px;
+}
+
+.btn {
+    margin: 3% auto;
+}
+
+.btn button {
+    font-weight: 700;
+    color: #FAF9F6;
+    background-color: #596D48;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login a {
+    color: #596D48;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+input {
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 2px 2px 5px #c9c9c9;
+}
+
+input[type="password"]:invalid {
+    border: 2px solid red;
 }
