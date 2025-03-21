@@ -40,7 +40,7 @@ body {
     position: absolute;
     bottom: 2%;
     color: #FAF9F6;
-    font-size: 0.5rem;
+    font-size: 1rem;
     font-weight: 300;
     font-family: sans-serif;
 }
@@ -70,7 +70,7 @@ body {
 .logo-text {
     color: white;
     font-family: 'norse bold';
-    font-size: 2rem;
+    font-size: 5rem;
 }
 
 .right-side > div:not(:nth-child(4)),
@@ -84,6 +84,7 @@ body {
 .para,
 legend {
     font-weight: 700;
+    font-size: 2rem;
 }
 
 .para {
@@ -125,6 +126,7 @@ label {
 }
 
 .btn button {
+    font-size: 1rem;
     font-weight: 700;
     color: #FAF9F6;
     background-color: #596D48;
