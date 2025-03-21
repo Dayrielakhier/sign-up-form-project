@@ -143,6 +143,7 @@ label {
 
 input {
     border-radius: 3px;
+    border: 1px solid;
 }
 
 input:focus {
